@@ -37,6 +37,7 @@ body{
 }
 input{
   border: transparent;
+  margin-left: 50px;
 }
 .status{
   margin-top: 3rem;
@@ -190,3 +191,27 @@ label {
   font-family: 'Montserrat', extra-bold;
 }
 */
+#email
+{
+  margin-left: 70px;
+}
+#license_number
+{
+  margin-left: 51px;
+}
+#depo
+{
+  margin-left: 72px;
+}
+#bus_id
+{
+  margin-left: 52px;
+}
+#from
+{
+  margin-left: 75px;
+}
+#to
+{
+  margin-left: 108px;
+}
