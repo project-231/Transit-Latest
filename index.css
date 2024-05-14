@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* light purple background */
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    font-weight: bold;
+    color: #026DDF; /* white color */
+    margin-top: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+button {
+    padding: 15px 30px; /* increased padding for larger button size */
+    margin: 0;
+    border: none;
+    height: 22vh;
+    width: 17%;
+    background-color: #026DDF; /* white background */
+    color: white; /* black text */
+    font-size: 3rem; /* increased font size */
+    cursor: pointer;
+    position: relative; /* needed for positioning pseudo-element */
+    font-family: 'Montserrat', bold; /* Montserrat font */
+}
+
+button:first-child {
+    border-top-left-radius: 3rem; /* curve the top-left corner */
+    border-bottom-left-radius: 3rem; /* curve the bottom-left corner */
+    margin-right: 5px; /* small gap between the first and second button */
+}
+
+button:last-child {
+    border-top-right-radius: 3rem; /* curve the top-right corner */
+    border-bottom-right-radius: 3rem; /* curve the bottom-right corner */
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1px; /* position the separator line to the right of the button */
+    height: 80%; /* adjust the height of the separator line */
+    width: 1px; /* thickness of the separator line */
+    background-color: white; /* color of the separator line */
+}
+
+button:last-child::after {
+    display: none; /* hide separator line after the last button */
+}
+
+button:hover {
+    background-color: #cccccc; /* light gray background on hover */
+}
