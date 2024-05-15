@@ -110,7 +110,8 @@ function getUserLocation() {
                 map.removeLayer(currentUserMarker);
             }
 
-            currentUserMarker = L.marker(userLatLng).addTo(map).bindPopup('your Location<br/>').openPopup();
+            var currentUserMarker = L.marker(userLatLng).addTo(map);
+
             
            
         }, function(error) {
