@@ -7,6 +7,14 @@ h2{
   margin-top: 3rem;
   text-align: center;
 }
+p{
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+}
+#clock{
+  font-size: 1.3rem;
+  font-family: "proxima-nova", sans-serif;
+}
 .endpt{
   width: 20%;
   height: 4rem;
@@ -15,9 +23,10 @@ h2{
   text-align: center;
   margin-top: 3.5rem;
   border: 1px solid transparent;
-  font-family: 'Montserrat', bold;
+  font-family: "proxima-nova", sans-serif;
   font-size: 1.1rem;
-  background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4))
+  background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));
+  font-weight: 600;
 }
 
 .toFromBoxes{
@@ -55,6 +64,7 @@ img{
   border: 1px solid transparent;
   font-family: 'Montserrat', bold;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 #searchBtn:hover{
   background-color: #cccccc; /* light gray background on hover */
@@ -69,9 +79,9 @@ img{
   border-spacing: 40px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat', bold; 
+  font-family: "proxima-nova", sans-serif;
   justify-content: center;
-
+  font-weight: 600;
 }
 .bus-table{
   width: 100%;
