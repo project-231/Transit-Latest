@@ -56,7 +56,7 @@ function createCustomIcon(iconUrl) {
 currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addTo(map)
     .bindPopup('Bus Location')
     .openPopup();
-    map.setView(currentBusMarker.getLatLng(),13);
+    map.setView(currentBusMarker.getLatLng(),20);
 
 
 
