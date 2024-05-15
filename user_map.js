@@ -10,7 +10,7 @@ const database = getDatabase(app);
 const BUSESRef = ref(database, "LIST OF BUSES");
 
 // Initialize the map
-var map = L.map('map').setView([10.8505, 76.2711], 8);
+var map = L.map('map').setView([10.8505, 76.2711], 13);
 
 // Add the OpenStreetMap tiles as the base layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
