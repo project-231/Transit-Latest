@@ -56,7 +56,7 @@ function createCustomIcon(iconUrl) {
 currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addTo(map)
     .bindPopup('Bus Location')
     .openPopup();
-    map.setView(currentMarker.getLatLng(),20);
+    map.setView(currentBusMarker.getLatLng(),13);
 
 
 
@@ -73,6 +73,7 @@ currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addT
             // Display the name of the place
             locationbox.style.display = 'block';
             locationbox.innerText = `\n${placeName_0},\n${placeName_1},\n${placeName_2}`; // Change locationDiv to locationbox
+            console.log(placeName_0);
         } else {
             locationbox.style.display = 'block';
             locationbox.innerText = "Location not found"; // Change locationDiv to locationbox
@@ -133,4 +134,4 @@ function getUserLocation() {
     }
 }
 getUserLocation();
-setInterval(() =>getUserLocation(), 8000);
+setInterval(() =>getUserLocation(), 10000);
