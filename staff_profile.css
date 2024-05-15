@@ -1,5 +1,6 @@
-body{
-  font-family: 'Montserrat', sans-serif;
+*{
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
 }
 .main-container{
   display: flex;
@@ -11,12 +12,14 @@ body{
   height: 100vh;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .right{
   width: 50%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+
 }
 .status{
   display: flex;
@@ -35,9 +38,13 @@ body{
   margin-top: 1.7rem;
   font-size: 1.6rem;
 }
+.details input{
+  font-family: "proxima-nova", sans-serif;
+}
 input{
   border: transparent;
   margin-left: 50px;
+  font-family: "proxima-nova", sans-serif;
 }
 .status{
   margin-top: 3rem;
@@ -59,16 +66,18 @@ h1, .details{
   margin-left: auto;
   margin-top: 5rem;
   display: flex;
+  border: 1px solid #026DDF;
+  background-color: white;
+  border-radius: 50%;
 }
 li{
   color: #026DDF;
 }
 #signOut{
   background-color: transparent;
-  text-align: left;
-  margin-top: 10rem;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  color: #026DDF;
+  font-family: "proxima-nova", sans-serif;
   font-size: 1.3rem;
 }
 #signOut:hover{
@@ -78,7 +87,7 @@ li{
 .left-info{
   color: white;
   background-color: #026DDF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "proxima-nova", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -90,7 +99,8 @@ li{
 }
 .l-info{
   background-color: #026DDF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "proxima-nova", sans-serif;
+  color: white;
 }
 .Username{
   justify-content: center;
@@ -102,12 +112,14 @@ li{
   text-align: center;
   background-color: #026DDF;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 .left-info label{
   color: white;
   text-align: center;
 
 }
+
 /*
 body {
   background-color: #026DDF;
