@@ -98,7 +98,7 @@ currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addT
 var busName = localStorage.getItem('routescheduleid');
 console.log(busName);
 getBusLocation(busName);
-setInterval(() => getBusLocation(busName), 7000);
+setInterval(() => getBusLocation(busName), 5000);
 
 function getUserLocation() {
     if ("geolocation" in navigator) {
@@ -134,4 +134,4 @@ function getUserLocation() {
     }
 }
 getUserLocation();
-setInterval(() =>getUserLocation(), 10000);
+setInterval(() =>getUserLocation(), 40000);
