@@ -56,7 +56,7 @@ function createCustomIcon(iconUrl) {
 currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addTo(map)
     .bindPopup('Bus Location')
     .openPopup();
-    map.setView(currentBusMarker.getLatLng(),20);
+    map.setView(currentBusMarker.getLatLng(),18);
 
 
 
@@ -98,7 +98,7 @@ currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addT
 var busName = localStorage.getItem('routescheduleid');
 console.log(busName);
 getBusLocation(busName);
-setInterval(() => getBusLocation(busName), 5000);
+setInterval(() => getBusLocation(busName), 15000);
 
 function getUserLocation() {
     if ("geolocation" in navigator) {
@@ -135,4 +135,4 @@ function getUserLocation() {
     }
 }
 getUserLocation();
-setInterval(() =>getUserLocation(), 40000);
+setInterval(() =>getUserLocation(), 90000);
