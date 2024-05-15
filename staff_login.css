@@ -53,7 +53,8 @@ label{
   color: #026DDF;
   margin-top: 2rem;
   text-align: left;
-  font-family: 'Montserrat', extra-bold;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 800;
 }
 .login-box input {
   width: 100%;
@@ -63,7 +64,8 @@ label{
   border: none;
   border-bottom: 2px solid #cccccc; /* Add bottom border */
   border-radius: 10px;
-  font-family: 'Montserrat', extra-bold;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
 }
 .butt{
   display: flex;
@@ -84,8 +86,9 @@ label{
   background-color: #026DDF;
   color: white;
   font-size: 18px;
-  font-family: 'Montserrat', extra-bold;
+  font-family: "proxima-nova", sans-serif;
   text-decoration: underline;
+  font-weight: 700;
 }
 
 #login-button:hover, #signup-button:hover{

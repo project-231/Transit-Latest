@@ -8,20 +8,19 @@
     <title>Transit Tracker</title>
 </head>
 <body>
-    <div class="sections">
-      <div class="inputbox">
-        <h1 class="ip">Enter the End-Station points</h1>
-        <label class="ip lab" for="Start-station">Start Station</label>
-        <input class="ip" type="text" name="" id="fromInput">
-        <br>
-        <label class="ip lab" for="End-station">End Station</label>
-        <input class="ip" type="text" name="" id="toInput">
-        <br>
-        <br>
-        <button class="ip" type="button" class="btn btn-primary" id="searchBtn">Submit</button>
-      </div>
+  <h2 class="ip">Please enter the End-Station points for your duty..</h2>
+  <div class="top">
+    <div class="toFromBoxes">
+      <input class="endpt" type="text" id="fromInput" placeholder="From">
+      <img src="./Images/Group 2.png" alt="" class="dotLeft">
+      <img class="busImg" src="./Images/bus logo_blue.png" alt="">
+      <img src="./Images/Group 1.png" alt="" class="dotRight">
+      <input class="endpt" type="text" id="toInput" placeholder="To">
     </div>
-    
+    <button id="searchBtn">Get Bus</button>
+    <p class="busSelect">Select your bus</p>
+    <div id="busResults" class="busTable"></div>
+  </div>
     <div id="busResults" class="busTable"></div>
     <script src="staff_info.js" type="text/javascript"></script>
 </body>
