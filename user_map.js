@@ -56,6 +56,7 @@ function createCustomIcon(iconUrl) {
 currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addTo(map)
     .bindPopup('Bus Location')
     .openPopup();
+    map.setView(currentMarker.getLatLng(),20);
 
 
 
@@ -108,7 +109,7 @@ function getUserLocation() {
                 map.removeLayer(currentUserMarker);
             }
 
-            currentUserMarker = L.marker(userLatLng).addTo(map).bindPopup('User Location<br/>').openPopup();
+            currentUserMarker = L.marker(userLatLng).addTo(map).bindPopup('your Location<br/>').openPopup();
             
            
         }, function(error) {
