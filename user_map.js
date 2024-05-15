@@ -132,4 +132,3 @@ function getUserLocation() {
     }
 }
 getUserLocation();
-setInterval(() =>getUserLocation(), 8000);
