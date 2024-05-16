@@ -69,10 +69,10 @@ currentBusMarker = L.marker([latitude, longitude], { icon: redMarkerIcon }).addT
             const addressComponents = data.display_name.split(', ');
             const placeName_0 = addressComponents[0];
             const placeName_1 = addressComponents[1];
-            const placeName_2 = addressComponents[2];
+            // const placeName_2 = addressComponents[2];
             // Display the name of the place
             locationbox.style.display = 'block';
-            locationbox.innerText = `\n${placeName_0},\n${placeName_1},\n${placeName_2}`; // Change locationDiv to locationbox
+            locationbox.innerText = `\n${placeName_0},\n${placeName_1}`; // Change locationDiv to locationbox
             console.log(placeName_0);
         } else {
             locationbox.style.display = 'block';
